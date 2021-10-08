@@ -1,0 +1,78 @@
+
+
+1] linux command
+
+mkdir sales
+exam@debian:~$ cd sales
+exam@debian:~/sales$ mkdir location1
+exam@debian:~/sales$ mkdir location2
+exam@debian:~/sales$ mkdir location3
+exam@debian:~/sales$ cd location1
+exam@debian:~/sales/location1$ cat>sales1.txt
+saree^Z
+[1]+  Stopped                 cat > sales1.txt
+exam@debian:~/sales/location1$ cat>sales2.txt
+was^Z
+[2]+  Stopped                 cat > sales2.txt
+exam@debian:~/sales/location1$ cat>sales3.txt
+good^Z
+[3]+  Stopped                 cat > sales3.txt
+exam@debian:~/sales/location1$ cd ~
+exam@debian:~$ cd sales
+exam@debian:~/sales$ cd location2
+exam@debian:~/sales/location2$ cat>pur1.txt
+watch tv^Z
+[4]+  Stopped                 cat > pur1.txt
+exam@debian:~/sales/location2$ cat>pur2.txt
+car colour is white^Z
+[5]+  Stopped                 cat > pur2.txt
+exam@debian:~/sales/location2$ cd ~
+exam@debian:~$ cd sales
+exam@debian:~/sales$ cd location3
+exam@debian:~/sales/location3$ cat>stock1.txt
+car
+book 
+pen
+marks
+house
+plan
+play
+ball
+red
+orange
+apple
+white
+black^Z
+[6]+  Stopped                 cat > stock1.txt
+exam@debian:~/sales/location3$ cat>stock2.txt
+fisherman^Z
+[7]+  Stopped                 cat > stock2.txt
+
+Q1)exam@debian:~/sales/location2$ cat pur1.txt pur2.txt>>pur3.txt
+Q4)exam@debian:~/sales/location3$ head -n 10 stock1.txt
+Q5)exam@debian:~/sales$ ls -l
+
+
+2]LINUX SHELL
+
+
+
+
+
+echo "enter three integer"
+read a
+read r
+read h
+echo -e "menu \n 1 for cube \n 2 for sphere \n 3 for cylinder"
+echo "enter your choice"
+read ch
+case $ch in
+    1)c="$(expr $a /* $a /* $a)" ;; 
+      echo "$c"
+    2)b="(r /* r /* r)"
+      c="$(expr (4 / 3) /* (22 /7) /*b)" ;;
+      echo "$c"
+    3)d="(r /* r)"
+      c="$(expr (22 / 7) /* d /* h)" ;;
+      echo "$c"
+esac
